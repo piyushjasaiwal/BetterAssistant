@@ -15,7 +15,7 @@ client.list_collections()
 
 collection = client.get_or_create_collection(
     name="agent_knowledge",
-    embedding_function=embedding_fn # type: ignore
+    embedding_function=embedding_fn
 )
 
 def get_from_chroma(query: str) -> str | None:
@@ -23,9 +23,8 @@ def get_from_chroma(query: str) -> str | None:
         query_texts=[query],
         n_results=1
     )
-    # print(f"The result from the chroma is {results}")
     if results["documents"] and results["documents"][0]:
-        if results["distances"][0][0] < 1.0: # type: ignore
+        if results["distances"][0][0] < 1.0:
             return results["documents"][0][0]
         
     return None

@@ -15,9 +15,9 @@ def export(filename = "logs", chat = []):
 
         for message in chat:
             if isinstance(message, HumanMessage):
-                file.write(f"User: {message.content[0]['query']}\n") # type: ignore
+                file.write(f"User: {message.content[0]['query']}\n")
             elif isinstance(message, AIMessage):
-                file.write(f"Bot: {message.content[0]['response']}\n\n") # type: ignore
+                file.write(f"Bot: {message.content[0]['response']}\n\n")
 
         file.write("<===================================End of Conversation================================>\n")
 

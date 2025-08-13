@@ -52,9 +52,7 @@ class Assistant:
             return state
         
     def __show_response(self, state: AgentState) -> None:
-        ai_response = state["messages"][-1].content[0]["response"] # type: ignore
-        print(f"Master, The answer to your query is")
-        print(ai_response)
+        state["messages"][-1].content[0]["response"] # type: ignore
 
     def __decideFlow(self, state: AgentState) -> bool:
         latest_message = state["messages"][-1]
@@ -89,7 +87,6 @@ class Assistant:
     def ask(self, query: str) -> dict | None:
         self.conversation_history.append(HumanMessage(content=[{"query": query}]))
         result =  self.app.invoke(AgentState(messages=self.conversation_history))
-        print(result)
         return result["messages"][-1].content[0]["response"]
     
     def export(self, filename=""):

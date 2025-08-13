@@ -19,7 +19,6 @@ def query():
         return jsonify({"error": "No JSON body found"}), 400
     
     query_text = request_body.get("query")
-    print(query_text)
     if not query_text:
         return jsonify({"error": "Missing 'query' field"}), 400
     
