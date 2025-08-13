@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello World"
+    return "Server is running"
 
 
 @app.route("/api/v1/query", methods=["POST"])
