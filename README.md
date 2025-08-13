@@ -2,13 +2,13 @@
 
 An AI-powered assistant that works via **Command Line Interface (CLI)** and provides **REST API endpoints** for programmatic access (e.g., Postman).  
 
-The agent can answer questions by performing a web search using Tavily, then summarising the web results extracted using  a summarisation pipeline which makes use of **facebook/bart-large-cnn** model to create a curated response for the user. 
+The agent can answer questions by performing a web search using Tavily, then summarising the web results extracted using a summarisation pipeline which makes use of **facebook/bart-large-cnn** model to create a curated response for the user. 
 
-Once the session is completed it saves the chat history in .txt format for user to reference later.
+Once the session is completed, It saves the chat history in .txt format for user to reference later.
 
 ---
 
-## Langgraph Workflow for the agent
+## LangGraph Workflow for the agent
 <p align="center">
   <img src="assets/workflow.png" alt="Agent Workflow" />
 </p>
@@ -23,22 +23,16 @@ Once the session is completed it saves the chat history in .txt format for user 
 - [Usage](#usage)
   - [CLI](#cli)
   - [API](#api)
-- [API Endpoints](#api-endpoints)
-- [Project Structure](#project-structure)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
+- [Author](#author)
 ---
 
 ## Features
-- Interactive CLI interface for conversations.
+- Interactive CLI for conversations.
 - REST API for integration with Postman or other tools.
 - Web search capability using Tavily.
-- Context-aware summarisation of response to create curated well structured response.
-- Uses chroma db to store embedding for query and responses for faster retreival of responses next time similar statament is queried.
-- Provides user with an option to save chat to refer later
+- Context-aware summarisation of response to create curated, well-structured response.
+- Uses ChromaDB to store embeddings for queries and responses for faster retrieval of responses next time similar statement is queried.
+- Provides the user with an option to save chat to refer to later
 - Easy to extend with new agents or workflows.
 
 ---
@@ -73,7 +67,7 @@ tavily_api_key =
 
 ## Usage
 
-### Using the Agent Via CLI
+### Using the Agent via CLI
 
 Run the CLI app using command
 ```bash
@@ -89,7 +83,7 @@ python cli.py
   <img src="assets/query_response.png" alt="query response" />
 </p>
 
-- ChromaDB is initialised as soon as the first query is made by the user and a folder chroma_store is created at the root
+- ChromaDB is initialized as soon as the first query is made by the user and a folder chroma_store is created at the root
 
 <p align="center">
   <img src="assets/chroma_store.png" alt="chroma store" width=600 />
@@ -105,8 +99,8 @@ python cli.py
   <img src="assets/chat_logs.png" alt="Chat logs" width=600 />
 </p>
 
-### Using the Agent Via API Endpoints
-Run the Flask app using command
+### Using the Agent via API Endpoints
+Run the Flask app using the command
 ```bash
 python flask_app.py
 ```
@@ -135,7 +129,7 @@ The server will start at `http://127.0.0.1:5000`
   <img src="assets/server_query.png" alt="server query" width=800/>
 </p>
 
-- ChromaDB is initialised as soon as the first query is made by the user and a folder chroma_store is created at the root
+- ChromaDB is initialized as soon as the first query is made by the user and a folder chroma_store is created at the root
 
 <p align="center">
   <img src="assets/chroma_store.png" alt="chroma store" width=600/>
@@ -153,7 +147,9 @@ The server will start at `http://127.0.0.1:5000`
 
 ## 👤 Author
 
-**Piyush Jasaiwal**  
+**Piyush Jasaiwal**   
 
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/piyushjasaiwal)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/piyush-jasaiwal/)
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" height="20"/> [github.com/piyushjasaiwal](https://github.com/piyushjasaiwal)  
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" height="20"/> [linkedin.com/in/piyush-jasaiwal](https://www.linkedin.com/in/piyush-jasaiwal/)
+
+
