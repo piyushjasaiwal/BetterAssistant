@@ -145,6 +145,10 @@ The server will start at `http://127.0.0.1:5000`
   <img src="assets/chat_logs.png" alt="Chat logs" width=600/>
 </p>
 
+<p align="center">
+  <img src="assets/saved_chats.png" alt="saved chat logs"/>
+</p>
+
 ## 👤 Author
 
 **Piyush Jasaiwal**   
