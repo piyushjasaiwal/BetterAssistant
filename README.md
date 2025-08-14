@@ -149,7 +149,14 @@ The server will start at `http://127.0.0.1:5000`
 
 **Piyush Jasaiwal**   
 
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" height="20"/> [github.com/piyushjasaiwal](https://github.com/piyushjasaiwal)  
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" height="20"/> [linkedin.com/in/piyush-jasaiwal](https://www.linkedin.com/in/piyush-jasaiwal/)
+<a href="https://github.com/piyushjasaiwal">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" height="20"/>
+</a> [github.com/piyushjasaiwal](https://github.com/piyushjasaiwal)  
 
+<a href="https://www.linkedin.com/in/piyush-jasaiwal/">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" height="20"/>
+</a> [linkedin.com/in/piyush-jasaiwal](https://www.linkedin.com/in/piyush-jasaiwal/)  
 
+<a href="https://x.com/Piyush_Jasaiwal">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X (Twitter)" height="20"/>
+</a> [x.com/Piyush_Jasaiwal](https://x.com/Piyush_Jasaiwal)
